@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@keyframes fade-in {
+  0% {background-color: #008CBA;}
+  50% {background-color: #006699;}
+  100% {background-color: #008CBA;}
+}
+
+@keyframes decrease {
+  0% {background-color: #464a4b;}
+  50% {background-color: #4b4d4e;}
+  100% {background-color: #2a2b2c;}
+}
+
+.main {
+  background: #efecec;
+  max-width: 925px;
+  height: 100vh;
+  min-height: 500px;
+  margin: 100px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  background: #b39e9e94;
+  width: 500px;
+  height: 400px;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controllers {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.temp__display {
+  font-size: 2em;
+  width: 170px;
+  height: 170px;
+  border: hsl(267, 51%, 67%) 2px solid;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.increase {
+  background-color: #008cba;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 15px 0 #006699; 
+}
+
+.decrease {
+  background: gray;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 15px 0 #6c6f70;
+}
+
+.increase:hover {
+  background: rgb(22, 119, 151);
+  cursor: pointer;
+  transition: all 0.2s;
+  animation: fade-in 1s infinite;
+}
+
+.decrease:hover {
+  background: #3d3f40;
+  cursor: pointer;
+  transition: all 0.2s;
+  animation: decrease 1s infinite;
+}
+
+.hot {
+  background: rgb(135, 59, 59);
+}
+
+.cold {
+  background: cornflowerblue;
+}
